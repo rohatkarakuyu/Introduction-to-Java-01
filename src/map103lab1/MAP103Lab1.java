@@ -1,21 +1,18 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package map103lab1;
 
-/**
- *
- * @author 19062738
- */
-public class MAP103Lab1 {
+import java.util.Scanner;
 
-    /**
-     * @param args the command line arguments
-     */
+public class MAP103Lab1 { // convertion of fahrenheit to celcius and vise versa
+
     public static void main(String[] args) {
-        // TODO code application logic here
+        double F, Celcius;
+        Scanner in = new Scanner(System.in);
+
+        System.out.print("Enter the value of temperature in degree celcius: ");
+        F = in.nextDouble();
+        Celcius = F + 32; 
+        System.out.printf(F+" °C = %.1f °F\n", Celcius);
+     
     }
-    
 }
